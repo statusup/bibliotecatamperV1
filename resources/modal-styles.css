@@ -1,0 +1,100 @@
+/* Botão no canto inferior esquerdo */
+#botao-modal {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+#botao-modal:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#botao-modal:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-conteudo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in;
+    text-align: center;
+}
+
+.modal-conteudo h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin: 0 0 15px;
+}
+
+.modal-conteudo p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.botao-fechar {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-fechar:hover {
+    background-color: #c0392b;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .modal-conteudo {
+        width: 95%;
+        padding: 15px;
+    }
+    .modal-conteudo h2 {
+        font-size: 20px;
+    }
+    .modal-conteudo p {
+        font-size: 14px;
+    }
+}
