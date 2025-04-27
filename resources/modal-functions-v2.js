@@ -14,9 +14,10 @@ function fecharModal() {
     }
 }
 
-// Função para mudar o fundo da página
+// Função para mudar o fundo da página com transição
 function mudarFundo() {
-    document.body.style.background = `linear-gradient(135deg, #${Math.floor(Math.random()*16777215).toString(16)}, #${Math.floor(Math.random()*16777215).toString(16)})`;
+    document.body.style.transition = 'background 0.5s ease';
+    document.body.style.background = `radial-gradient(circle, #${Math.floor(Math.random()*16777215).toString(16)}, #${Math.floor(Math.random()*16777215).toString(16)})`;
 }
 
 // Função para exibir alerta com texto dinâmico
