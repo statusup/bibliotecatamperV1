@@ -1,0 +1,8 @@
+{
+    "titulo": "Modal Visual Avançado",
+    "subtitulo": "Teste com Novas Funções e Estilos",
+    "texto": "Este modal foi redesenhado com cores vibrantes, um ícone visual, e novos botões para facilitar o desenvolvimento.",
+    "texto_secundario": "Experimente os botões para mudar o fundo, exibir um alerta, ou fechar o modal.",
+    "texto_alerta": "🚀 Alerta visual carregado do JSON!",
+    "imagem_url": "https://via.placeholder.com/100?text=Ícone"
+}

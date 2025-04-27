@@ -1,7 +1,0 @@
-{
-    "titulo": "Bem-vindo ao Modal Avançado (atualizado)",
-    "subtitulo": "Teste de Funcionalidades Dinâmicas",
-    "texto": "Este modal foi atualizado com novos textos e funções, carregados dinamicamente do GitHub para facilitar o desenvolvimento de bibliotecas.",
-    "texto_secundario": "Clique nos botões abaixo para testar as novas funcionalidades, como mudar o fundo da página ou exibir um alerta personalizado.",
-    "texto_alerta": "Esta é uma mensagem de alerta dinâmica, carregada do JSON!"
-}
