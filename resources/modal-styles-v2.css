@@ -6,24 +6,22 @@
     padding: 12px 24px !important;
     font-size: 16px !important;
     color: #ffffff !important;
-    background-color: #e91e63 !important; /* Rosa vibrante */
+    background-color: #ff4081 !important; /* Rosa neon */
     border: none !important;
     border-radius: 8px !important;
     cursor: pointer !important;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s !important;
-    z-index: 10000 !important; /* Alto z-index */
+    transition: background-color 0.3s, transform 0.2s !important;
+    z-index: 99999 !important;
 }
 
 #botao-modal:hover {
-    background-color: #c2185b !important;
+    background-color: #f50057 !important;
     transform: translateY(-2px) !important;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
 }
 
 #botao-modal:active {
     transform: translateY(0) !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* Modal */
@@ -34,41 +32,41 @@
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    background-color: rgba(0, 0, 0, 0.7) !important; /* Fundo mais escuro */
-    z-index: 20000 !important;
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Fundo bem escuro */
+    z-index: 100000 !important;
     align-items: center !important;
     justify-content: center !important;
 }
 
 .modal-conteudo {
     background-color: #ffffff !important;
-    padding: 25px !important;
-    border-radius: 12px !important;
-    max-width: 550px !important;
-    width: 95% !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    max-width: 500px !important;
+    width: 90% !important;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
-    animation: fadeIn 0.4s ease-in !important;
+    animation: fadeIn 0.3s ease-in !important;
     text-align: center !important;
-    border: 2px solid #e91e63 !important; /* Borda rosa */
+    border: 3px solid #ff4081 !important; /* Borda rosa neon */
 }
 
 .modal-conteudo h2 {
-    color: #d81b60 !important; /* Rosa escuro */
-    font-size: 26px !important;
+    color: #ff4081 !important;
+    font-size: 24px !important;
     margin: 0 0 10px !important;
 }
 
 .modal-conteudo h3 {
-    color: #c2185b !important;
-    font-size: 20px !important;
-    margin: 0 0 15px !important;
+    color: #d81b60 !important;
+    font-size: 18px !important;
+    margin: 0 0 10px !important;
 }
 
 .modal-conteudo p {
     color: #333 !important;
     font-size: 16px !important;
-    line-height: 1.6 !important;
-    margin: 0 0 15px !important;
+    line-height: 1.5 !important;
+    margin: 0 0 10px !important;
 }
 
 .modal-conteudo .texto-secundario {
@@ -76,53 +74,51 @@
     color: #666 !important;
 }
 
-/* Imagem no modal */
 .modal-imagem {
-    width: 100px !important;
-    height: 100px !important;
+    width: 80px !important;
+    height: 80px !important;
     margin: 10px auto !important;
-    border-radius: 10px !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
 }
 
 /* Botões do modal */
 .botao-modal {
-    padding: 12px 24px !important;
-    font-size: 15px !important;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
     color: #ffffff !important;
     border: none !important;
-    border-radius: 6px !important;
+    border-radius: 5px !important;
     cursor: pointer !important;
     margin: 5px !important;
-    transition: background-color 0.3s, transform 0.2s !important;
+    transition: background-color 0.3s !important;
 }
 
 .botao-fechar {
-    background-color: #ff5722 !important; /* Laranja vibrante */
+    background-color: #ff9800 !important; /* Laranja */
 }
 
 .botao-fechar:hover {
-    background-color: #e64a19 !important;
+    background-color: #fb8c00 !important;
 }
 
 .botao-mudar-fundo {
-    background-color: #00bcd4 !important; /* Ciano vibrante */
+    background-color: #03a9f4 !important; /* Azul claro */
 }
 
 .botao-mudar-fundo:hover {
-    background-color: #00acc1 !important;
+    background-color: #0288d1 !important;
 }
 
 .botao-alerta {
-    background-color: #ffeb3b !important; /* Amarelo vibrante */
-    color: #333 !important; /* Texto escuro para contraste */
+    background-color: #ffc107 !important; /* Amarelo */
+    color: #333 !important;
 }
 
 .botao-alerta:hover {
-    background-color: #fbc02d !important;
+    background-color: #ffb300 !important;
 }
 
-/* Animação de fade-in */
+/* Animação */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -135,19 +131,9 @@
         padding: 15px !important;
     }
     .modal-conteudo h2 {
-        font-size: 22px !important;
+        font-size: 20px !important;
     }
     .modal-conteudo h3 {
-        font-size: 18px !important;
-    }
-    .modal-conteudo p {
-        font-size: 14px !important;
-    }
-    .modal-conteudo .texto-secundario {
-        font-size: 12px !important;
-    }
-    .modal-imagem {
-        width: 80px !important;
-        height: 80px !important;
+        font-size: 16px !important;
     }
 }
