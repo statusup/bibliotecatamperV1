@@ -11,7 +11,7 @@
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    transition: background-color 0.3s, transform 0.2s, box-shadow: 0.3s;
     z-index: 1000;
 }
 
@@ -54,6 +54,12 @@
 .modal-conteudo h2 {
     color: #2c3e50;
     font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.modal-conteudo h3 {
+    color: #34495e;
+    font-size: 18px;
     margin: 0 0 15px;
 }
 
@@ -61,22 +67,48 @@
     color: #333;
     font-size: 16px;
     line-height: 1.6;
-    margin: 0 0 20px;
+    margin: 0 0 15px;
 }
 
-.botao-fechar {
+.modal-conteudo .texto-secundario {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Botões do modal */
+.botao-modal {
     padding: 10px 20px;
     font-size: 14px;
     color: white;
-    background-color: #e74c3c;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-fechar {
+    background-color: #e74c3c;
 }
 
 .botao-fechar:hover {
     background-color: #c0392b;
+}
+
+.botao-mudar-fundo {
+    background-color: #2ecc71;
+}
+
+.botao-mudar-fundo:hover {
+    background-color: #27ae60;
+}
+
+.botao-alerta {
+    background-color: #f1c40f;
+}
+
+.botao-alerta:hover {
+    background-color: #d4ac0d;
 }
 
 /* Animação de fade-in */
@@ -94,7 +126,13 @@
     .modal-conteudo h2 {
         font-size: 20px;
     }
+    .modal-conteudo h3 {
+        font-size: 16px;
+    }
     .modal-conteudo p {
         font-size: 14px;
+    }
+    .modal-conteudo .texto-secundario {
+        font-size: 12px;
     }
 }
