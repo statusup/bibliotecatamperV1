@@ -1,8 +1,8 @@
 {
-    "titulo": "Modal Visual Avançado",
-    "subtitulo": "Teste com Novas Funções e Estilos",
-    "texto": "Este modal foi redesenhado com cores vibrantes, um ícone visual, e novos botões para facilitar o desenvolvimento.",
-    "texto_secundario": "Experimente os botões para mudar o fundo, exibir um alerta, ou fechar o modal.",
-    "texto_alerta": "🚀 Alerta visual carregado do JSON!",
-    "imagem_url": "https://via.placeholder.com/100?text=Ícone"
+    "titulo": "Modal Visual v3",
+    "subtitulo": "Teste Corrigido",
+    "texto": "Este modal foi simplificado para garantir que funcione corretamente no kittxt.com.",
+    "texto_secundario": "Clique nos botões para testar as funções visuais.",
+    "texto_alerta": "🎉 Alerta v3 do JSON!",
+    "imagem_url": "https://via.placeholder.com/100?text=v3"
 }
